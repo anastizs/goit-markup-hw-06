@@ -224,6 +224,7 @@ ul{
 /* MODAL */
 
 .backdrop {
+    z-index: 9;
     position: fixed;
     top: 0;
     left: 0;
@@ -249,15 +250,16 @@ ul{
 
     min-width: 528px;
     min-height: 581px;
-
+    border-radius: 4px;
+    box-shadow: var(--card-shadow);
     background-color: #ffffff;
     transform: scaleY();
 }
 
 .close-btn {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
+    /* justify-content: flex-end;
+    align-items: flex-start; */
     border-radius: 50%;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
