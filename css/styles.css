@@ -240,20 +240,22 @@ ul{
     pointer-events: none;
     
 }
-
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.7);
+}
 .modal {
     position: absolute;
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms var(--timing-function);
 
     min-width: 528px;
     min-height: 581px;
     border-radius: 4px;
     box-shadow: var(--card-shadow);
     background-color: #ffffff;
-    transform: scaleY();
 }
 
 .close-btn {
