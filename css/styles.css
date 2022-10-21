@@ -245,20 +245,24 @@ ul{
 }
 .modal {
     position: absolute;
+    
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms var(--timing-function);
+    padding: 40px;
 
     min-width: 528px;
-    min-height: 581px;
+    
     border-radius: 4px;
     box-shadow: var(--card-shadow);
     background-color: #ffffff;
+    color: var(--primery-text-color);
 }
 
 .close-btn {
+    position: absolute;
     display: flex;
     /* justify-content: flex-end;
     align-items: flex-start; */
@@ -268,9 +272,8 @@ ul{
     width: 30px;
     height: 30px;
     padding: 5px;
-    margin-left: auto;
-    margin-right: 8px;
-    margin-top: 8px;
+    right: 8px;
+    top: 8px;
     cursor: pointer;
     
 }
@@ -279,8 +282,112 @@ ul{
     height: 18px;
     color: currentColor;
 }
+/* ФОРМА */
+.form{
+    width: 448px;
+    margin-right: auto;
+    margin-left: auto;
 
+    /* outline: 1px solid red; */
 
+}
+.form-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primery-text-color);
+    margin-bottom: 12px;
+}
+.form-field{
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 10px;
+
+    /* outline: 1px solid blue; */
+}
+
+.form-input{
+    padding: 11px 12px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.form-label{
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    text-align: start;
+    color: var(--title-text-color);
+    margin-bottom: 4px;
+}
+.form-label::placeholder{
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+}
+
+.comment{
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    
+}
+.form-policy{
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+.checkbox{
+    width: 16px;
+    height: 15px;
+    background: var(--primery-text-color);
+    margin: 0;
+    color: var(--primery-text-color);
+}
+.policy{
+    width: 400px;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin: 0;
+}
+
+.form-contract{
+    color: #2196F3;
+    text-decoration-line: underline;
+}
+
+.form-btn {
+    display: flex;
+    /* justify-content: center; */
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    ;
+}
 /* Особливості */
 .section{
     padding-top: 94px;
@@ -498,6 +605,7 @@ ul{
 .footer-address {
     display: flex;
     flex-direction: column;
+    width: 231px;
     
 }
 
@@ -594,7 +702,46 @@ ul{
 .footer-link:focus {
     background-color: #2196F3;
 }
+.footer-conect{
+    width: 570px;
+    margin-top: 12px;
+    margin-left: 93px;
 
+}
+.footer-group{
+    display: flex;
+    
+    gap: 10px;
+}
+.footer-input{
+    width: 358px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 15px 16px;
+}
+.footer-btn{
+    font-weight: 700;
+    font-size: 16px;
+    width: 200px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+}
+.footer-send{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
 /* Portfolio */
 
 /* Filter */
