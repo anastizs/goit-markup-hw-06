@@ -264,8 +264,6 @@ ul{
 .close-btn {
     position: absolute;
     display: flex;
-    /* justify-content: flex-end;
-    align-items: flex-start; */
     border-radius: 50%;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -277,7 +275,7 @@ ul{
     cursor: pointer;
     
 }
-.close-svg{
+.close-icon{
     width: 18px;
     height: 18px;
     color: currentColor;
@@ -301,6 +299,7 @@ ul{
     margin-bottom: 12px;
 }
 .form-field{
+    position: relative;
     display: flex;
     flex-direction: column;
 
@@ -310,9 +309,26 @@ ul{
 }
 
 .form-input{
-    padding: 11px 12px;
+    fill: currentColor;
+    padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: none;
+    transition: border 250ms var(--timing-function);
+}
+.form-input:focus-within ~ .form-icon{
+    fill: #2196F3;
+}
+.form-input:focus{
+    border: 1px solid #2196F3;
+}
+.form-icon{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 12px;
+    
 }
 .form-label{
     font-size: 12px;
@@ -347,11 +363,11 @@ ul{
     margin-top: 20px;
 }
 .checkbox{
-    width: 16px;
-    height: 15px;
-    background: var(--primery-text-color);
-    margin: 0;
-    color: var(--primery-text-color);
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
 }
 .policy{
     width: 400px;
@@ -386,7 +402,11 @@ ul{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: none;
     border-radius: 4px;
-    ;
+    cursor: pointer;
+}
+
+.form-btn:active {
+    background: #188CE8;
 }
 /* Особливості */
 .section{
@@ -716,6 +736,7 @@ ul{
 .footer-input{
     width: 358px;
     background-color: #2F303A;
+    color: #FFFFFF;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
