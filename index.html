@@ -68,7 +68,39 @@
                             <button class="close-btn" data-modal-close>
                                 <svg class="close-svg">
                                     <use href="./images/symbol-defs.svg#icon-x"></use>
-                                </svg></button>
+                                </svg>
+                            </button>
+                            <div class="modal-form">
+                                <h1 class="form-title">Залиште свої дані, ми вам передзвонимо</h1>
+                                <form class="form js-speaker-form">
+                                    <div class="form-field">
+                                        <label class="form-label" for="name" >Ім'я</label>
+                                        <input class="form-input" type="text" name="name" id="name">
+                                    </div>
+                                    
+                                    <div class="form-field">
+                                        <label class="form-label" for="tel">Телефон</label>
+                                        <input class="form-input" type="tel" name="tel" id="tel" autofocus>
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="form-label" for="mail">Пошта</label>
+                                        <input class="form-input" type="email" name="mail" id="mail">
+                                    </div>
+                                    <div class="form-field">
+                                        <label class="form-label" for="comment">Коментар</label>
+                                        <textarea class="form-input comment" name="comment" id="comment" rows="8" placeholder="Введіть текст"></textarea>
+                                    </div>
+
+                                     <div class="form-policy">                           
+                                        <input class="checkbox" type="checkbox" name="policy" id="policy" >
+                                        <label class="policy" for="policy">Погоджуюся з розсилкою та приймаю <a href="" class="form-contract">Умови договору</a></label>
+                                    </div>                      
+                                
+                                    <button type="submit" class="form-btn">Відправити</button>
+                                </form>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -426,13 +458,37 @@
                     </ul>
                 
                 </div>
+                <div class="footer-conect">
+                    <p class="footer-text">Підпишіться на розсилку</p>
+                    <div class="footer-group">
+                        <input class="footer-input" type="email" name="mail" placeholder="E-mail">
+                        <button type="submit" class="footer-btn">Підписатися
+                           <svg class="footer-send"><use href="./images/symbol-defs.svg#icon-send"></use></svg>
+                        </button>
+                    </div>
+
+                </div>
             </div>
               
         </div>
     </footer>
     <script src="./js/modal.js"></script>
     
+<!-- Скрипт для просмотра данных отправки в "console": -->
 
+    <script>
+        (() => {
+            document.querySelector('.js-speaker-form').addEventListener('submit', e => {
+                e.preventDefault();
+
+                new FormData(e.currentTarget).forEach((value, name) =>
+                    console.log(`${name}: ${value}`),
+                );
+
+                e.currentTarget.reset();
+            });
+        })();
+    </script>
 
 </body>
 
