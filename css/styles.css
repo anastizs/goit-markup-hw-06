@@ -394,7 +394,7 @@ ul{
 .checkbox:checked +.checkbox-icon{
     background-color: #2196F3;
     border-color: #2196F3;
-    background-image: url("./images/svg/check.svg");
+    background-image: url("../images/svg/check.svg");
     object-fit: cover;
     /* background-origin: border-box; */
     background-repeat: no-repeat;
