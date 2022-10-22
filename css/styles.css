@@ -246,7 +246,6 @@ ul{
 .modal {
     position: absolute;
     
-
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -293,8 +292,6 @@ ul{
     margin-right: auto;
     margin-left: auto;
 
-    /* outline: 1px solid red; */
-
 }
 .form-title{
     font-weight: 700;
@@ -311,8 +308,6 @@ ul{
     flex-direction: column;
 
     margin-bottom: 10px;
-
-    /* outline: 1px solid blue; */
 }
 
 .form-input{
@@ -399,7 +394,7 @@ ul{
 .checkbox:checked +.checkbox-icon{
     background-color: #2196F3;
     border-color: #2196F3;
-    background-image: url("../images/svg/check.svg");
+    background-image: url("./images/svg/check.svg");
     object-fit: cover;
     /* background-origin: border-box; */
     background-repeat: no-repeat;
