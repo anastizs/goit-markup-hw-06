@@ -266,6 +266,7 @@ ul{
     display: flex;
     border-radius: 50%;
     background-color: #FFFFFF;
+    fill: #212121;
     border: 1px solid rgba(0, 0, 0, 0.1);
     width: 30px;
     height: 30px;
@@ -278,8 +279,13 @@ ul{
 .close-icon{
     width: 18px;
     height: 18px;
-    color: currentColor;
 }
+
+.close-icon:hover,
+.close-icon:focus{
+    fill: #2196F3;
+}
+
 /* ФОРМА */
 .form{
     width: 448px;
@@ -363,19 +369,39 @@ ul{
     margin-top: 20px;
 }
 .checkbox{
-    position: absolute;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
+    
+    position: absolute;
+    
 }
 .policy{
-    width: 400px;
+    width: 425px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--title-text-color);
     margin: 0;
+
+    /* outline: 1px solid red; */
+}
+.checkbox-icon{
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    background-color: var(--hero-title);
+    margin-right: 8px;
+    border: 2px solid var(--primery-text-color);
+    border-radius: 4px;
+}
+.checkbox:checked +.checkbox-icon{
+    background-color: #2196F3;
+    border-color: #2196F3;
+    background-image: url("../images/svg/check.svg");
+    object-fit: cover;
+    /* background-origin: border-box; */
+    background-repeat: no-repeat;
 }
 
 .form-contract{
