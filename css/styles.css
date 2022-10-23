@@ -281,8 +281,8 @@ ul{
     transition: fill 250ms var(--timing-function);
 }
 
-.close-icon:hover,
-.close-icon:focus{
+.close-btn:hover,
+.close-btn:focus{
     fill: #2196F3;
 }
 
@@ -314,6 +314,7 @@ ul{
     fill: currentColor;
     padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    height: 40px;
     border-radius: 4px;
     outline: none;
     transition: border 250ms var(--timing-function);
@@ -356,7 +357,7 @@ ul{
 }
 .form-policy{
     display: flex;
-    
+    height: 24px;
     align-items: center;
     justify-content: center;
     
