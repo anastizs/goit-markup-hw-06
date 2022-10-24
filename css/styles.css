@@ -303,17 +303,23 @@ ul{
     margin-bottom: 12px;
 }
 .form-field{
-    position: relative;
+    
     display: flex;
     flex-direction: column;
 
     margin-bottom: 10px;
 }
-
+.form-container{
+    position: relative;
+    
+    
+}
 .form-input{
+
     fill: currentColor;
     padding: 11px 12px 11px 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 448px;
     height: 40px;
     border-radius: 4px;
     outline: none;
@@ -329,7 +335,7 @@ ul{
     position: absolute;
     width: 18px;
     height: 18px;
-    top: 50%;
+    transform: translateY(12px);
     left: 12px;
     
 }
